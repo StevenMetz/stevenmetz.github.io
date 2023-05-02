@@ -7,12 +7,13 @@ import {
   faGitlab,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
+import LogoS from '../../assets/Images/Logo-s.png'
 export function Sidebar() {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        {/* <img src="" alt="logo" />
-          <img src="" className="sub-logo" alt="logo" /> */}
+        <img src={LogoS} alt="logo" />
+        {/* <img src={} className="sub-logo" alt="logo" /> */}
       </Link>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">

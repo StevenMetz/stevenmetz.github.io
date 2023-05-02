@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import { AnimatedLetters } from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import { Logo } from './Logo'
 export function Home() {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['S', 't', 'e', 'v', 'e', 'n', ' ', 'M', 'e', 't', 'z']
+  const nameArray = ['S', 't', 'e', 'v', 'e', 'n', ' ', 'M', 'e', 't', 'z', ',']
   const jobArray = [
     'S',
     'o',
@@ -57,6 +58,7 @@ export function Home() {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   )
 }

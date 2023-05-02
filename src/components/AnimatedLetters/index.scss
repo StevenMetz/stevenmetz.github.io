@@ -12,12 +12,12 @@
 
   &:hover {
     animation: rubberBand 1s;
-    color: #ffd700;
+    color: rgb(70, 255, 48);
   }
 }
 
-@for $i from 1 through 42 {
+@for $i from 1 through 43 {
   .text-animate._#{$i}{
-    animation-delay: #{$i / 10}s;
+    animation-delay: #{calc($i / 10)}s;
   }
 }
