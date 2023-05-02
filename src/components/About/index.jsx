@@ -4,7 +4,6 @@ import { AnimatedLetters } from '../AnimatedLetters'
 import './index.scss'
 import { useState, useEffect } from 'react'
 import {
-  faCss3,
   faCss3Alt,
   faGitAlt,
   faGithub,
@@ -47,9 +46,7 @@ export function About() {
           constantly changing needs of clients. I will use the same skills I
           used to build homes but with a keyboard instead of a hammer.{' '}
         </p>
-        <p>
-          I am looking forward to being the solution to your business needs.{' '}
-        </p>
+        <p>I am looking forward to helping solve your business needs. </p>
       </div>
       <div className="stage-cube-cont">
         <div className="cubespinner">
