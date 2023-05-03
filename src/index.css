@@ -4,8 +4,10 @@ html {
 
 body {
   margin: 0;
+  font-size: 12px;
+  font-weight: 300;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #444;
+  color: #716767;
   background: rgb(1, 18, 75);
   overflow: hidden;
   display: block;

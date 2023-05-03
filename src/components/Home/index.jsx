@@ -4,6 +4,7 @@ import './index.scss'
 import { AnimatedLetters } from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { Logo } from './Logo'
+import Loader from 'react-loaders'
 export function Home() {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['S', 't', 'e', 'v', 'e', 'n', ' ', 'M', 'e', 't', 'z', ',']
@@ -32,33 +33,36 @@ export function Home() {
     }, 4000)
   }, [])
   return (
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={`${letterClass} _11`}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
+    <>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={`${letterClass} _11`}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m </span>{' '}
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={26}
+            />
+          </h1>
           <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m </span>{' '}
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={26}
-          />
-        </h1>
-        <br />
-        <h2> Full-Stack / Ruby on Rails / Javascript </h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+          <h2> Full-Stack / Ruby on Rails / Javascript </h2>
+          <Link to="/contact" className="flat-button">
+            CONTACT ME
+          </Link>
+        </div>
+        <Logo />
       </div>
-      <Logo />
-    </div>
+      <Loader type="pacman" />
+    </>
   )
 }
