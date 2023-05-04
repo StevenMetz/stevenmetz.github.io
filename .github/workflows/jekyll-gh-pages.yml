@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@StevenMetz 
+StevenMetz
+/
+stevenmetz.github.io
+Public
+Fork your own copy of StevenMetz/stevenmetz.github.io
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Beta Try the new code view
+stevenmetz.github.io/.github/workflows/jekyll-gh-pages.yml
+@StevenMetz
+StevenMetz Update jekyll-gh-pages.yml
+Latest commit 57e8713 15 minutes ago
+ History
+ 1 contributor
+51 lines (46 sloc)  1.27 KB
+ 
+
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
@@ -49,3 +82,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+stevenmetz.github.io/jekyll-gh-pages.yml at main · StevenMetz/stevenmetz.github.io
