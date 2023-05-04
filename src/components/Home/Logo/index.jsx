@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef } from 'react'
 import './index.scss'
-import LogoS from '../../../assets/Images/Logo-s.png'
+import LogoS from '../../../../dist/assets/Logo-S-e1be5bc5.png'
+
 import { gsap, DrawSVGPlugin } from 'gsap-trial/all'
 
 export function Logo() {

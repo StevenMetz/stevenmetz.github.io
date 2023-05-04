@@ -7,7 +7,7 @@ import {
   faGitlab,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
-import LogoS from '../../assets/Images/Logo-s.png'
+import LogoS from '../../../dist/assets/Logo-S-e1be5bc5.png'
 export function Sidebar() {
   return (
     <div className="nav-bar">
