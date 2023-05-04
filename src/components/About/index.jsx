@@ -6,11 +6,11 @@ import { useState, useEffect } from 'react'
 import {
   faCss3Alt,
   faGitAlt,
-  faGithub,
   faHtml5,
   faJsSquare,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
+import { DiRuby } from 'react-icons/di'
 import Loader from 'react-loaders'
 export function About() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -69,7 +69,7 @@ export function About() {
               <FontAwesomeIcon icon={faCss3Alt} color="#28A4D9" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGithub} color="white" />
+              <DiRuby />
             </div>
           </div>
         </div>

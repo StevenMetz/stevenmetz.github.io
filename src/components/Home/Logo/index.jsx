@@ -43,7 +43,7 @@ export function Logo() {
       <img ref={solidLogoRef} className="solid-logo" src={LogoS} alt="Logo" />
       <svg
         version="1.0"
-        viewBox="0 50 359 397"
+        viewBox="-10 50 369 397"
         xmlns="http://www.w3.org/2000/svg"
       >
         <g className="svg-container" transform="translate(0 59)" fill="none">
