@@ -21,14 +21,35 @@
     right: auto;
     bottom: auto;
     left: 0;
-    margin:auto;
-    opacity: 0;  
+    margin:auto; 
     z-index: 1;
+    animation: fillImage 3s 3s forwards ;
   }
 
-}
+} 
 .svg-container {
-  stroke: #46FF30;
-  stroke-width: 2px;
-  transform: rotateZ('180deg');
+  .svg-path {
+    stroke: #46FF30;
+    stroke-width: 2px;
+     stroke-dasharray: 1717.559814453125px;
+     stroke-dashoffset: -1717.559814453125px;
+     animation: draw 3s forwards;
+    transform: rotateZ('180deg');
+
+  }
+  svg g {
+    opacity: 0;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fillImage {
+
+  to {
+    opacity: 1;
+  }
 }
