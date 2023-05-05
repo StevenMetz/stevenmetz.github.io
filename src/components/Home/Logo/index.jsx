@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef } from 'react'
 import './index.scss'
-import LogoS from '../../../../dist/assets/Logo-S-e1be5bc5.png'
 
 import { gsap, DrawSVGPlugin } from 'gsap-trial/all'
 
@@ -41,7 +40,12 @@ export function Logo() {
   }, [])
   return (
     <div className="logo-container" ref={bgRef}>
-      <img ref={solidLogoRef} className="solid-logo" src={LogoS} alt="Logo" />
+      <img
+        ref={solidLogoRef}
+        className="solid-logo"
+        src="https://res.cloudinary.com/dhtvsvfce/image/upload/v1683255123/Logo-S_z53uq3.png  "
+        alt="Logo"
+      />
       <svg
         version="1.0"
         viewBox="-10 50 369 397"
