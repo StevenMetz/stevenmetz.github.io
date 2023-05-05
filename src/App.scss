@@ -1,6 +1,7 @@
 $primary-color:rgb(70, 255, 48);
 html {
-  font-family: sans-serif
+  font-family: sans-serif;
+  zoom: 80%;
 }
 @import 'loaders.css/src/animations/pacman.scss';
 @import 'animate.css';
