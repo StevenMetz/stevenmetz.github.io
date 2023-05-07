@@ -1,13 +1,21 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faBars,
+  faClose,
+  faEnvelope,
+  faHome,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faGitlab,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
+import { useState } from 'react'
 export function Sidebar() {
+  const [showNav, setShowNav] = useState(false)
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
@@ -16,11 +24,17 @@ export function Sidebar() {
           alt="logo"
         />
       </Link>
-      <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+      <nav className={showNav ? 'mobile-show' : ''}>
+        <NavLink
+          onClick={() => setShowNav(false)}
+          exact="true"
+          activeclassname="active"
+          to="/"
+        >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" to="/" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           to="/about"
@@ -29,6 +43,7 @@ export function Sidebar() {
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" to="/about" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           to="/contact"
@@ -36,8 +51,17 @@ export function Sidebar() {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" to="/" />
         </NavLink>
+        <FontAwesomeIcon
+          className="close-icon"
+          onClick={() => {
+            setShowNav(false)
+          }}
+          icon={faClose}
+          color=" rgb(70, 255, 48)"
+          size="3x"
+        />
       </nav>
-      <ul>
+      <ul className="mobile">
         <li>
           <a
             target="_blank"
@@ -62,6 +86,13 @@ export function Sidebar() {
           </a>
         </li>
       </ul>
+      <FontAwesomeIcon
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color=" rgb(70, 255, 48)"
+        size="3x"
+        className="hamburger-icon"
+      />
     </div>
   )
 }

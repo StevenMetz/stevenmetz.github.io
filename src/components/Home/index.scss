@@ -60,3 +60,46 @@ h1 {
     color: rgb(1, 18, 75);
    }
 }
+@media screen and (max-width: 1200px) {
+  .home-page {
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .logo-container {
+      margin-top: 100px;
+      display: relative;
+      width: 200px;
+      height: auto;
+      top: auto;
+      right: 0;
+      box-sizing: border-box;
+      text-align: center;
+      left: 0;
+      bottom: auto;
+      .solid-logo{
+        left: auto;
+        right: -25px;
+        width: 200px;
+      }
+      svg {
+        position: relative;
+        top: 0;
+        right: auto;
+        left: 25px;
+        bottom: auto;
+        margin: auto;
+      }
+    }
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 135px;
+
+    }
+  }
+}

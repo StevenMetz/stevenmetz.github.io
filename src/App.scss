@@ -1,4 +1,11 @@
 $primary-color:rgb(70, 255, 48);
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
 html {
   font-family: sans-serif;
   zoom: 80%;
