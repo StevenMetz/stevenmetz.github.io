@@ -160,7 +160,7 @@
        z-index: 2;
        position: fixed;
        
-       &.mobile-show,.mobile {
+       &.mobile-show, ul {
          display: block;
       
         }    
@@ -178,9 +178,6 @@
       a svg {
         opacity: 1 !important;
       }
-     }
-     .mobile-show.mobile{
-      display: block;
      }
      .hamburger-icon,
      .close-icon {
