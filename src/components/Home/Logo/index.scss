@@ -53,3 +53,20 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .svg-container {
+    .svg-path {
+      stroke: #46FF30;
+      stroke-width: 2px;
+       stroke-dasharray: 1717.559814453125px;
+       stroke-dashoffset: -1717.559814453125px;
+       animation: draw 3s backwards;
+      transform: rotateZ('180deg');
+  
+    }
+    svg g {
+      opacity: 0;
+    }
+  }
+}
