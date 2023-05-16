@@ -61,7 +61,7 @@ export function Sidebar() {
           size="3x"
         />
       </nav>
-      <ul className="mobile">
+      <ul className={showNav ? 'mobile-show' : ''}>
         <li>
           <a
             target="_blank"
