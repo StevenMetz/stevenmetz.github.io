@@ -67,7 +67,7 @@ export function Sidebar() {
             setShowNav(false)
           }}
           icon={faClose}
-          color=" rgb(70, 255, 48)"
+          color=" #46FF30"
           size="3x"
         />
       </nav>
@@ -99,7 +99,7 @@ export function Sidebar() {
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
-        color=" rgb(70, 255, 48)"
+        color=" #46FF30"
         size="3x"
         className="hamburger-icon"
       />

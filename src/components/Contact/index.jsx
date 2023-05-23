@@ -39,7 +39,7 @@ export function Contact() {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={'Contact Me'.split('')}
               idx={15}
             />
           </h1>

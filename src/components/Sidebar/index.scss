@@ -48,7 +48,7 @@
       }
 
       &:hover {
-        color:rgb(70, 255, 48);
+        color:#46FF30;
 
         svg {
           opacity: 0;
@@ -100,7 +100,7 @@
 
     a.active {
       svg {
-        color: rgb(70, 255, 48);
+        color: #46FF30;
       }
     }
   }
@@ -127,7 +127,7 @@
         color: #4d4d4e;
         
         &:hover svg {
-            color: rgb(70, 255, 48);
+            color: #46FF30;
           }
       }
       }
@@ -193,7 +193,7 @@
      }
      .hamburger-icon,
      .close-icon {
-        color: rgb(70, 255, 48);
+        color: #46FF30;
         position: absolute;
         top: 15px;
         right: 15px;

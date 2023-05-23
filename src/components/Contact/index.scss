@@ -56,20 +56,20 @@ p {
     box-sizing: border-box;
   }
   .flat-button {
-    color: rgb(70, 255, 48);
+    color: #46FF30;
     font-size: 18px;
     font-weight: 400;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 20px;
-    border: 1px solid  rgb(70, 255, 48);
+    border: 1px solid  #46FF30;
     margin-top: 10px;
     float: right;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
   
      &:hover {
-      background: rgb(70, 255, 48);
+      background: #46FF30;
       color: rgb(1, 18, 75);
      }
   }

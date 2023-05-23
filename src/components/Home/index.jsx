@@ -7,26 +7,8 @@ import { Logo } from './Logo'
 import Loader from 'react-loaders'
 export function Home() {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['S', 't', 'e', 'v', 'e', 'n', ' ', 'M', 'e', 't', 'z', ',']
-  const jobArray = [
-    'S',
-    'o',
-    'f',
-    't',
-    'w',
-    'a',
-    'r',
-    'e',
-    ' ',
-    'E',
-    'n',
-    'g',
-    'i',
-    'n',
-    'e',
-    'e',
-    'r',
-  ]
+  const nameArray = 'Steven Metz,'.split('')
+  const jobArray = 'Software Engineer.'.split('')
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
