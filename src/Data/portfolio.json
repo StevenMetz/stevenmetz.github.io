@@ -5,12 +5,6 @@
       "title": "ConstructionOptimizer",
       "description": "ConstructOptimizer is a task assignment application designed for construction Foreman. It allows Foremen to assign multiple tasks to employees, reducing interruptions during work. The app features a user-friendly interface where employees can view their assigned tasks and mark them as done or undone if needed. It is built with React.js for the Front End and Ruby on Rails for the back end.",
       "url": "https://github.com/StevenMetz/ConstructOptimizer/tree/main"
-    },
-    {
-      "cover":"/portfolio/ConstructionOptimizer/ConstructionOptimizer.png",
-      "title": "Construction Management Application",
-      "description": "ConstructOptimizer is a task assignment application designed for construction Foreman. It allows Foremen to assign multiple tasks to employees, reducing interruptions during work. The app features a user-friendly interface where employees can view their assigned tasks and mark them as done or undone if needed. It is built with React.js for the Front End and Ruby on Rails for the back end.",
-      "url": "https://github.com/StevenMetz/ConstructOptimizer/tree/main"
     }
   ]
 }
