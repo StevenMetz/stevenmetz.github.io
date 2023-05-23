@@ -10,7 +10,12 @@ export function Contact() {
     event.preventDefault()
 
     emailjs
-      .sendForm('default_service', 'template_a7kv4dc', refForm.current, '')
+      .sendForm(
+        'default_service',
+        'template_a7kv4dc',
+        refForm.current,
+        'g8SPOAXBmEcPAciCF'
+      )
       .then(
         () => {
           alert('Message successfully sent')
