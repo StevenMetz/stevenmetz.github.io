@@ -6,6 +6,7 @@ import {
   faClose,
   faEnvelope,
   faHome,
+  faSuitcase,
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -41,6 +42,15 @@ export function Sidebar() {
           className="about-link"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" to="/about" />
+        </NavLink>
+        <NavLink
+          onClick={() => setShowNav(false)}
+          exact="true"
+          activeclassname="active"
+          to="/portfolio"
+          className="portfolio-link"
+        >
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" to="/" />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
