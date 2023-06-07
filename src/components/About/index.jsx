@@ -44,7 +44,7 @@ export function About() {
             passions of creating solutions to problems not yet solved, creating
             a project from nothing to something, and my fascination with how
             computers work. The skills I learned framing homes transfer
-            perfectly to devloping software solutions from dealing with
+            perfectly to developing software solutions from dealing with
             ambiguity to constantly changing needs of clients. I will use the
             same skills I used to build homes but with a keyboard instead of a
             hammer.{' '}
