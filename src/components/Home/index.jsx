@@ -38,16 +38,18 @@ export function Home() {
           </h1>
           <br />
           <h2> Full-Stack / Ruby on Rails / React </h2>
-          <span>
-            <Link to="/contact" className="flat-button">
-              CONTACT ME
-            </Link>
-          </span>
-          <span>
-            <Link to="/about" className="flat-button">
-              ABOUT ME
-            </Link>
-          </span>
+          <div className="btn-mobile">
+            <span>
+              <Link to="/contact" className="flat-button">
+                CONTACT ME
+              </Link>
+            </span>
+            <span>
+              <Link to="/about" className="flat-button">
+                ABOUT ME
+              </Link>
+            </span>
+          </div>
         </div>
         <Logo />
       </div>
