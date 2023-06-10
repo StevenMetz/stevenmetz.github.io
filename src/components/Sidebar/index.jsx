@@ -31,6 +31,7 @@ export function Sidebar() {
           exact="true"
           activeclassname="active"
           to="/"
+          className="home-link"
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" to="/" />
         </NavLink>
@@ -70,32 +71,32 @@ export function Sidebar() {
           color=" #46FF30"
           size="3x"
         />
+        <ul className={showNav ? 'mobile-show' : ''}>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://linkedin.com/in/steven-metz"
+            >
+              <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/stevenmetz"
+            >
+              <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://gitlab.com/StevenMetz"
+            >
+              <FontAwesomeIcon icon={faGitlab} color="#4d4d4e" />
+            </a>
+          </li>
+        </ul>
       </nav>
-      <ul className={showNav ? 'mobile-show' : ''}>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://linkedin.com/in/steven-metz"
-          >
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/stevenmetz"
-          >
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://gitlab.com/StevenMetz"
-          >
-            <FontAwesomeIcon icon={faGitlab} color="#4d4d4e" />
-          </a>
-        </li>
-      </ul>
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
