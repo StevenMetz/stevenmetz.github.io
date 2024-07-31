@@ -1,28 +1,61 @@
+$primary-color: #46FF30;
 .container {
   width: 100%;
   will-change: contents;
   height: 90%;
-  min-height:  566px;
+  min-height: 566px;
   position: absolute;
-  opacity:  0;
+  opacity: 0;
   top: 5%;
-  margin:  0 auto;
+  margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: $primary-color transparent;
+  /* For Firefox */
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+    /* Initially hide the scrollbar */
+  }
+
+  &:hover::-webkit-scrollbar {
+    display: block;
+    /* Show the scrollbar when the container is hovered */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: darken($primary-color, 10%);
+  }
 }
 .page {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-
+body {
+  margin: 0; 
+  overflow: hidden; 
+}
+p a {
+  text-decoration: none;
+  color:$primary-color;
+}
 .stage-cube-cont {
   width: 50%;
   height: 100%;
   top: 0;
-  padding-top: 18%;
+  padding-top: 30%;
   margin-left: 0;
   position: absolute;
   right: 0;
@@ -30,14 +63,10 @@
 }
 
 .cubespinner {
-  animation-name: spincube;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
+  animation: spincube 12s ease-in-out infinite;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
-
   div {
     position: absolute;
     width: 200px;
@@ -78,6 +107,9 @@
   }
 }
 
+li {
+  padding-bottom: 5px;
+}
 @keyframes spincube {
   from,
   to {
@@ -103,7 +135,7 @@
   .stage-cube-cont {
     width: 100%;
     height: 25%;
-    top: 650px;
+    top: 950px;
     bottom: auto;
     margin:auto;
     overflow: hidden;
@@ -160,13 +192,11 @@
   }
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .stage-cube-cont {
     width: 100%;
     height: 25%;
-    top: 90%;
-    bottom: auto;
-    margin:auto;
-    overflow: hidden;
+    padding-top: 10%;
+    top: auto
   }
 }

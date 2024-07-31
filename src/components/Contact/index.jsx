@@ -43,7 +43,7 @@ export function Contact() {
               idx={15}
             />
           </h1>
-          <p>
+          <p className="contact-description">
             I am interested in any opportunity small to large - especially
             ambitous or large projects. If you have any questions or requests
             don't hesitate to contact me using the form below.
@@ -52,18 +52,20 @@ export function Contact() {
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Enter your email"
                     required
                   />
-                </li>
-                <li>
-                  <input type="text" placeholder="Subject" name="subject" />
                 </li>
                 <li>
                   <input

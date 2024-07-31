@@ -33,7 +33,7 @@ export function Home() {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={26}
+              idx={24}
             />
           </h1>
           <br />
