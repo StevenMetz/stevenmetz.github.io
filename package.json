@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -24,6 +24,7 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.11.0",
     "sass": "^1.62.1",
+    "typescript": "^6.0.3",
     "vivus": "^0.4.6"
   },
   "devDependencies": {

@@ -37,7 +37,7 @@ export function Home() {
             />
           </h1>
           <br />
-          <h2> Full-Stack / Ruby on Rails / React </h2>
+          <h2> Front-End Engineer / React & Vue / E-Commerce </h2>
           <div className="btn-mobile">
             <span>
               <Link to="/contact" className="flat-button">

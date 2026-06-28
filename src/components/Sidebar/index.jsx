@@ -16,6 +16,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 export function Sidebar() {
+  const fontColor = '#4d4d4e'
   const [showNav, setShowNav] = useState(false)
   return (
     <div className="nav-bar">
@@ -33,7 +34,7 @@ export function Sidebar() {
           to="/"
           className="home-link"
         >
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" to="/" />
+          <FontAwesomeIcon icon={faHome} color={fontColor} to="/" />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
@@ -42,7 +43,7 @@ export function Sidebar() {
           to="/about"
           className="about-link"
         >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" to="/about" />
+          <FontAwesomeIcon icon={faUser} color={fontColor} to="/about" />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
@@ -51,7 +52,7 @@ export function Sidebar() {
           to="/portfolio"
           className="portfolio-link"
         >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" to="/" />
+          <FontAwesomeIcon icon={faSuitcase} color={fontColor} to="/" />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
@@ -60,7 +61,7 @@ export function Sidebar() {
           to="/contact"
           className="contact-link"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" to="/" />
+          <FontAwesomeIcon icon={faEnvelope} color={fontColor} to="/" />
         </NavLink>
         <FontAwesomeIcon
           className="close-icon"
@@ -78,21 +79,21 @@ export function Sidebar() {
               rel="noreferrer"
               href="https://linkedin.com/in/steven-metz"
             >
-              <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+              <FontAwesomeIcon icon={faLinkedin} color={fontColor} />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/stevenmetz"
             >
-              <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+              <FontAwesomeIcon icon={faGithub} color={fontColor} />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://gitlab.com/StevenMetz"
             >
-              <FontAwesomeIcon icon={faGitlab} color="#4d4d4e" />
+              <FontAwesomeIcon icon={faGitlab} color={fontColor} />
             </a>
           </li>
         </ul>

@@ -62,75 +62,99 @@ export function About() {
               idx={15}
             />
           </h1>
-          <p>
-            Hey there! I'm Steven, a passionate Full-Stack Software Engineer
-            with a knack for turning complex problems into elegant,
-            user-friendly solutions. My journey in tech has been an exciting
-            ride, and I'm always eager to learn and grow.
-          </p>
 
+          <p>
+            Hey there! I'm Steven—a UI-focused software engineer passionate
+            about building clean, intuitive digital experiences. Currently, I
+            work as a Implementations Engineer at Rebuy, where I partner with
+            top e-commerce brands to bring their storefront visions to life.
+          </p>
           <h2>What I Do</h2>
           <p>
-            I specialize in building robust web applications using a variety of
-            technologies. My toolbox includes:
+            I specialize in building custom shopping experiences for e-commerce
+            brands using modern frontend tools. As a Implementations Engineer at
+            Rebuy, I create tailored shopping carts and product recommendation
+            widgets that seamlessly blend into each merchant's storefront and
+            elevate their customer experience.
           </p>
-          <ul>
-            <li>Frontend: JavaScript, ReactJS, HTML, CSS, SCSS</li>
-            <li>Backend: Ruby, Ruby on Rails, Python, GO</li>
-            <li>Databases: PostgreSQL, Firebase</li>
-            <li>Version Control: Git, GitLab, GitHub</li>
-          </ul>
-
-          <h2>My Experience</h2>
-          <p>Currently, I'm wearing multiple hats:</p>
-          <ul>
-            <li>
-              As a Software Support Engineer at Rebuy, I'm not just solving
-              problems – I'm enhancing user experiences and diving deep into the
-              intricacies of e-commerce platforms.
-            </li>
-            <li>
-              I contribute to open-source projects on GitLab, because I believe
-              in the power of community-driven development.
-            </li>
-            <li>
-              As a Tech Mentor at Actualize Coding Bootcamp, I'm paying it
-              forward by guiding the next generation of developers.
-            </li>
-          </ul>
           <p>
-            Previously, I’ve worked on exciting projects, including building a
-            React Native mobile app and optimizing Firebase queries to ensure
-            smooth operation and cost-efficiency.
+            Rebuy is a personalization platform that uses AI to recommend
+            products, boost conversion rates, and increase average order value.
+            My role involves making those smart tools feel native to each
+            brand's identity through thoughtful UI and responsive design—often
+            diagnosing tricky browser-runtime and third-party integration issues
+            along the way, like third-party scripts that quietly monkey-patch
+            native browser APIs.
           </p>
-
+          <ul>
+            <li>
+              Frontend: React, Vue.js, JavaScript, Tailwind CSS, HTML, CSS
+            </li>
+            <li>Tooling: Vite, Git, GitHub, Figma</li>
+            <li>
+              Platform Experience: Shopify + Rebuy's AI-powered personalization
+              tools
+            </li>
+            <li>
+              Back-end Collaboration: Integrating APIs, debugging data-driven
+              logic, and working with engineers on scalable UI patterns
+            </li>
+          </ul>
+          <h2>My Experience</h2>
+          <p>
+            At Rebuy, I help high-performing Shopify merchants Implementations
+            personalized onsite experiences by building custom Smart Carts,
+            upsell widgets, and product recommendation modules—using React and
+            Vue depending on the merchant's stack. These features are powered by
+            Rebuy's AI, but my job is to make them look and feel like a natural
+            extension of the merchant's brand.
+          </p>
+          <ul>
+            <li>
+              Translate merchant branding into custom UI components that enhance
+              conversion and retention, contributing to a 15% average lift in
+              order value across merchant storefronts
+            </li>
+            <li>
+              Built and maintain an internal tool that automates Shopping Cart
+              V1→V2 migrations, reconciling structural differences and custom
+              Vue template changes
+            </li>
+            <li>
+              Work cross-functionally with customer success, product, and
+              engineering teams to deliver scalable frontend solutions
+            </li>
+            <li>
+              Contribute to internal tooling, reusable components, and best
+              practices that inform future product development
+            </li>
+          </ul>
           <h2>Why I Love What I Do</h2>
           <p>
-            Software engineering isn't just a job for me – it's a passion. I
-            love the challenge of creating efficient, scalable solutions that
-            make a real difference in people's lives. Whether it's crafting a
-            sleek user interface or optimizing backend processes, I'm always
-            excited to roll up my sleeves and dive in.
+            I get a kick out of making complex systems feel simple. Whether it's
+            solving styling edge cases, improving cart experiences, or finding
+            the balance between customization and scalability, I love the blend
+            of design, code, and impact.
           </p>
-
           <h2>Beyond the Code</h2>
           <p>
-            When I'm not coding, you might find me training for triathalons,
-            disk golfing, or hiking trails at my local parks. I believe in
-            maintaining a healthy work-life balance and drawing inspiration from
-            diverse experiences.
+            When I'm not working, I'm training for triathlons, playing disc
+            golf, working on a side project, or exploring trails in local parks.
+            I believe that movement fuels creativity, and stepping away from the
+            screen can lead to breakthroughs on it.
           </p>
-
           <h2>Let's Connect!</h2>
           <p>
-            I'm always open to new opportunities, collaborations, or just a good
-            chat about the latest in tech. Feel free to reach out{' '}
-            <a href="/contact">here</a> – I'd love to hear from you!
+            Whether you're into headless commerce, frontend performance, or just
+            want to geek out about UI—you can reach me{' '}
+            <a href="/contact">here</a>. I'd love to connect!
           </p>
+
           {windowSize < 800 && cubeElement}
         </div>
         {windowSize > 800 && cubeElement}
       </div>
+
       <Loader type="pacman" />
     </>
   )

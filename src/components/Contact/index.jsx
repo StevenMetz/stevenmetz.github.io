@@ -44,10 +44,12 @@ export function Contact() {
             />
           </h1>
           <p className="contact-description">
-            I am interested in any opportunity small to large - especially
-            ambitous or large projects. If you have any questions or requests
-            don't hesitate to contact me using the form below.
+            I'm open to opportunities of all sizes—especially bold or
+            high-impact projects. If you have a question, idea, or collaboration
+            in mind, feel free to reach out using the form below. I'd love to
+            connect.
           </p>
+
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
@@ -55,6 +57,7 @@ export function Contact() {
                   <input
                     type="text"
                     name="name"
+                    autoComplete="on"
                     placeholder="Enter your name"
                     required
                   />
@@ -63,6 +66,7 @@ export function Contact() {
                   <input
                     type="email"
                     name="email"
+                    autoComplete="on"
                     placeholder="Enter your email"
                     required
                   />
