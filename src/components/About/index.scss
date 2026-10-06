@@ -47,7 +47,7 @@ $primary-color: #46FF30;
   height: 100%;
   position: absolute;
 }
-body {
+html.legacy-site body {
   margin: 0; 
   overflow: hidden; 
 }
@@ -144,7 +144,7 @@ li {
     margin:auto;
     overflow: hidden;
   }
-  p {
+  html.legacy-site p {
   margin: 0px 0px 30px !important;
   }
   .cubespinner {

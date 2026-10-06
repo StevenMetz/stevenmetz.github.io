@@ -14,7 +14,7 @@ export function Portfolio() {
             <div className="image-box" key={idx}>
               <img
                 src={port.cover}
-                alt="portfolio"
+                alt={`Screenshot of ${port.title} project`}
                 className="portfolio-image"
               />
               <div className="content">
@@ -23,8 +23,9 @@ export function Portfolio() {
                 <button
                   className="button"
                   onClick={() => window.open(port.url)}
+                  aria-label={`View ${port.title} project`}
                 >
-                  View
+                  View Project
                 </button>
               </div>
             </div>

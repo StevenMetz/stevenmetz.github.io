@@ -1,0 +1,63 @@
+.dimension-line {
+  display: flex;
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+
+  .dimension-line-segment {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .dimension-line-marks {
+    display: flex;
+    align-items: center;
+    height: 18px;
+  }
+
+  .tick {
+    width: 1.5px;
+    height: 18px;
+    background: var(--line);
+
+    &.end {
+      margin-left: -1.5px;
+    }
+  }
+
+  .slash {
+    width: 1.5px;
+    height: 14px;
+    background: var(--line);
+    transform: rotate(45deg);
+
+    &.start {
+      margin-left: -1.5px;
+    }
+  }
+
+  .rule {
+    flex: 1 1 auto;
+    height: 1.5px;
+    background: var(--line);
+  }
+
+  .dimension-line-label {
+    text-align: center;
+    color: var(--body);
+  }
+
+  .accent {
+    .slash.end,
+    .tick.end {
+      background: var(--red);
+    }
+
+    .dimension-line-label {
+      color: var(--red);
+    }
+  }
+}

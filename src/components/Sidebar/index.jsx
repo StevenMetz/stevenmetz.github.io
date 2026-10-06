@@ -33,8 +33,14 @@ export function Sidebar() {
           activeclassname="active"
           to="/"
           className="home-link"
+          aria-label="Home"
         >
-          <FontAwesomeIcon icon={faHome} color={fontColor} to="/" />
+          <FontAwesomeIcon
+            icon={faHome}
+            color={fontColor}
+            to="/"
+            aria-hidden="true"
+          />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
@@ -42,8 +48,14 @@ export function Sidebar() {
           activeclassname="active"
           to="/about"
           className="about-link"
+          aria-label="About"
         >
-          <FontAwesomeIcon icon={faUser} color={fontColor} to="/about" />
+          <FontAwesomeIcon
+            icon={faUser}
+            color={fontColor}
+            to="/about"
+            aria-hidden="true"
+          />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
@@ -51,8 +63,14 @@ export function Sidebar() {
           activeclassname="active"
           to="/portfolio"
           className="portfolio-link"
+          aria-label="Portfolio"
         >
-          <FontAwesomeIcon icon={faSuitcase} color={fontColor} to="/" />
+          <FontAwesomeIcon
+            icon={faSuitcase}
+            color={fontColor}
+            to="/"
+            aria-hidden="true"
+          />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
@@ -60,51 +78,85 @@ export function Sidebar() {
           activeclassname="active"
           to="/contact"
           className="contact-link"
+          aria-label="Contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color={fontColor} to="/" />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            color={fontColor}
+            to="/"
+            aria-hidden="true"
+          />
         </NavLink>
-        <FontAwesomeIcon
-          className="close-icon"
+        <button
+          className={`close-icon ${showNav ? 'visible' : ''}`}
           onClick={() => {
             setShowNav(false)
           }}
-          icon={faClose}
-          color=" #46FF30"
-          size="3x"
-        />
-        <ul className={showNav ? 'mobile-show' : ''}>
+          aria-label="Close navigation menu"
+          aria-expanded={showNav}
+        >
+          <FontAwesomeIcon
+            icon={faClose}
+            color="#46FF30"
+            size="3x"
+            aria-hidden="true"
+          />
+        </button>
+        <ul className={showNav ? 'mobile-show' : ''} id="nav-menu">
           <li>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://linkedin.com/in/steven-metz"
+              aria-label="Visit LinkedIn profile (opens in new tab)"
             >
-              <FontAwesomeIcon icon={faLinkedin} color={fontColor} />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                color={fontColor}
+                aria-hidden="true"
+              />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/stevenmetz"
+              aria-label="Visit GitHub profile (opens in new tab)"
             >
-              <FontAwesomeIcon icon={faGithub} color={fontColor} />
+              <FontAwesomeIcon
+                icon={faGithub}
+                color={fontColor}
+                aria-hidden="true"
+              />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://gitlab.com/StevenMetz"
+              aria-label="Visit GitLab profile (opens in new tab)"
             >
-              <FontAwesomeIcon icon={faGitlab} color={fontColor} />
+              <FontAwesomeIcon
+                icon={faGitlab}
+                color={fontColor}
+                aria-hidden="true"
+              />
             </a>
           </li>
         </ul>
       </nav>
-      <FontAwesomeIcon
+      <button
+        className={`hamburger-icon ${showNav ? 'hidden' : ''}`}
         onClick={() => setShowNav(true)}
-        icon={faBars}
-        color=" #46FF30"
-        size="3x"
-        className="hamburger-icon"
-      />
+        aria-label="Open navigation menu"
+        aria-expanded={showNav}
+        aria-controls="nav-menu"
+      >
+        <FontAwesomeIcon
+          icon={faBars}
+          color="#46FF30"
+          size="3x"
+          aria-hidden="true"
+        />
+      </button>
     </div>
   )
 }

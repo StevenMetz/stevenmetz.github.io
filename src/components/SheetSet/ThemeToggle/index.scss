@@ -1,0 +1,62 @@
+.theme-toggle {
+  flex: 0 0 auto;
+  min-height: 64px;
+  min-width: 64px;
+  padding: 12px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+
+  .theme-toggle-heading {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--red);
+  }
+
+  .theme-toggle-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-stretch: 75%;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+  }
+
+  .theme-toggle-name {
+    display: inline-grid;
+
+    span {
+      grid-area: 1 / 1;
+    }
+
+    .inactive {
+      visibility: hidden;
+    }
+  }
+
+  .theme-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+    border: 1.5px solid var(--line);
+  }
+
+  .theme-toggle-knob {
+    position: absolute;
+    top: 2px;
+    left: var(--knob-left);
+    width: 11px;
+    height: 11px;
+    background: var(--red);
+  }
+}

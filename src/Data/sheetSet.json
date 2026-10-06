@@ -1,0 +1,93 @@
+{
+  "links": {
+    "email": "stevenm.codes@gmail.com",
+    "github": "https://github.com/stevenmetz",
+    "gitlab": "https://gitlab.com/StevenMetz",
+    "linkedin": "https://linkedin.com/in/steven-metz"
+  },
+  "generalNotes": [
+    "Currently an Implementation Engineer at Rebuy.",
+    "Building a storefront debugging MCP server.",
+    "Usually writing Vue, TypeScript and Liquid.",
+    "Field verify all dimensions. Old habit."
+  ],
+  "projects": [
+    {
+      "kind": "PERSONAL",
+      "title": "Storefront debugging MCP server",
+      "description": "A lot of my job is figuring out why something on a Shopify storefront is fighting with something else. This is an MCP server that gives an AI assistant the tools to do that digging on its own. It's my first real AI build, so I'm learning as I go.",
+      "tags": ["TYPESCRIPT", "MCP", "SHOPIFY"],
+      "inProgress": true,
+      "featured": true
+    },
+    {
+      "kind": "WORK, REBUY",
+      "title": "Cart V1 to V2 migration tool",
+      "description": "An internal tool that moves a merchant's shopping cart setup from V1 to V2. It cuts about four hours off every migration, which adds up fast when you're doing a lot of them.",
+      "callout": "~4 HRS SAVED PER MIGRATION"
+    },
+    {
+      "kind": "WITH FRIENDS",
+      "title": "Zakaria",
+      "description": "An avatar community site with forums that a few friends and I run. I rebuilt the whole front end, moving it off Laravel Livewire and onto Vue with Inertia. A Silk Road themed redesign is up next.",
+      "tags": ["VUE", "INERTIA", "LARAVEL"]
+    },
+    {
+      "kind": "PERSONAL, CLI",
+      "title": "Mortgage paydown calculator",
+      "description": "A Python CLI that runs amortization schedules and compares different payment plans to find the one that pays the least interest.",
+      "tags": ["PYTHON"]
+    },
+    {
+      "kind": "PERSONAL",
+      "title": "Plant-sharing app",
+      "description": "A mobile app for keeping journals on your plants, with care notes like how often to water and how much sun each one likes. You can share a journal with other people. Still early.",
+      "inProgress": true
+    }
+  ],
+  "revisions": [
+    {
+      "rev": "4",
+      "date": "2025 TO NOW",
+      "title": "Implementation Engineer, Rebuy",
+      "description": "Started as Launch Engineer (Front-End) and got renamed after a merit raise. I build custom front-end features for Shopify merchants in Vue, keep our reusable component library in shape, and sit in on post-sales calls to make sure what we promised is actually buildable. 167 merchant launches so far.",
+      "current": true
+    },
+    {
+      "rev": "3",
+      "date": "2023 TO 2025",
+      "title": "Software Support Engineer, Rebuy",
+      "description": "Support engineering on live merchant stores. Mostly that meant digging into third-party integration conflicts and shipping the fix, with Jest tests, through a PR."
+    },
+    {
+      "rev": "2",
+      "date": "SUMMER 2023",
+      "title": "Contract Software Engineer, ConvertClick Digital Analytics",
+      "description": "A few months of React Native work on their mobile app."
+    },
+    {
+      "rev": "1",
+      "date": "2022 TO 2023",
+      "title": "Student, then Teaching Assistant, Actualize",
+      "description": "Went through the Full-Stack Web Development program (Ruby, Rails, JavaScript, React), then stuck around to help the next cohorts get through it."
+    },
+    {
+      "rev": "0",
+      "date": "2016 TO 2023",
+      "title": "Foreman, K & H Construction",
+      "description": "Seven years running jobsites in home construction. The original build."
+    },
+    {
+      "rev": "+",
+      "date": "ON AND OFF",
+      "title": "Open source, GitLab",
+      "description": "I contribute when I have time. Got a merge request into the Google Play integration.",
+      "dashed": true
+    }
+  ],
+  "notes": [
+    { "rfi": "RFI-001", "title": "[POST TITLE]", "date": "[DATE]", "href": "#notes" },
+    { "rfi": "RFI-002", "title": "[POST TITLE]", "date": "[DATE]", "href": "#notes" },
+    { "rfi": "RFI-003", "title": "[POST TITLE]", "date": "[DATE]", "href": "#notes" }
+  ]
+}
