@@ -5,6 +5,7 @@
   transform: translateY(-50%);
   width: 40%;
   max-height: 90%;
+  overflow-x: hidden;
 }
 h1 {
   color: white;
@@ -12,7 +13,9 @@ h1 {
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 400;
-  white-space: nowrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
   &::before {
     font-family: 'Times New Roman', Times, serif;
     color:#46FF30;
@@ -69,9 +72,13 @@ h1 {
       transform: none;
       padding: 0 20px;
       box-sizing: border-box;
+      overflow-x: hidden;
     }
     h1 {
       font-size: 5rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
     }
     .logo-container {
       margin-top: 100px;
