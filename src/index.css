@@ -1,9 +1,77 @@
+:root {
+  --paper: #F3EFE6;
+  --band: #EAE4D7;
+  --grid: rgba(42, 58, 107, 0.07);
+  --ink: #1B1F2A;
+  --line: #2A3A6B;
+  --muted: #555B6B;
+  --body: #3E4352;
+  --red: #B23A24;
+  --solid-bg: #1B1F2A;
+  --solid-ink: #F3EFE6;
+  --knob-left: 2px;
+  --font-display: 'Archivo', 'Helvetica Neue', sans-serif;
+  --font-body: 'Newsreader', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper: #14305E;
+  --band: #102852;
+  --grid: rgba(255, 255, 255, 0.07);
+  --ink: #EEF2F8;
+  --line: #C9D6EE;
+  --muted: #A8B9D8;
+  --body: #D3DDEE;
+  --red: #FF9C85;
+  --solid-bg: #EEF2F8;
+  --solid-ink: #14305E;
+  --knob-left: 18px;
+  color-scheme: dark;
+}
+
+/* Follows the system theme when JS is off and nothing has set data-theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14305E;
+    --band: #102852;
+    --grid: rgba(255, 255, 255, 0.07);
+    --ink: #EEF2F8;
+    --line: #C9D6EE;
+    --muted: #A8B9D8;
+    --body: #D3DDEE;
+    --red: #FF9C85;
+    --solid-bg: #EEF2F8;
+    --solid-ink: #14305E;
+    --knob-left: 18px;
+    color-scheme: dark;
+  }
+}
+
 html {
-  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
   margin: 0;
+  background: var(--paper);
+}
+
+/* Pre-redesign pages (/about, /portfolio, /contact). Layout sets the class. */
+html.legacy-site {
+  font-size: 62.5%;
+  color-scheme: normal;
+  scroll-behavior: auto;
+}
+
+html.legacy-site body {
   font-size: 12px;
   font-weight: 300;
   font-family: 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -15,10 +83,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 1200px){ 
-  body {
+@media screen and (max-width: 1200px) {
+  html.legacy-site body {
     overflow: visible;
     overflow-x: hidden;
   }
-  
 }

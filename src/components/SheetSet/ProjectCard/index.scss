@@ -1,0 +1,125 @@
+.project-card {
+  border-right: 1.5px solid var(--line);
+  border-bottom: 1.5px solid var(--line);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  .project-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 16px;
+  }
+
+  .project-card-detail {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+
+  h3 {
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-stretch: 112%;
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  p {
+    margin: 0;
+    color: var(--body);
+    text-wrap: pretty;
+  }
+
+  .project-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+
+    span {
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+    }
+  }
+
+  .project-card-callout {
+    margin-top: auto;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--red);
+  }
+
+  .project-card-callout-rule {
+    width: 22px;
+    height: 1.5px;
+    background: var(--red);
+  }
+
+  &.featured {
+    grid-column: 1 / -1;
+    padding: 0;
+    gap: 0;
+
+    .project-card-hatch {
+      height: 28px;
+      border-bottom: 1.5px solid var(--line);
+      background-image: repeating-linear-gradient(
+        45deg,
+        var(--line) 0 1.2px,
+        transparent 1.2px 9px
+      );
+    }
+
+    .project-card-body {
+      padding: clamp(24px, 4vw, 44px);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 48px;
+      align-items: flex-end;
+    }
+
+    .project-card-main {
+      flex: 999 1 420px;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .project-card-meta {
+      justify-content: flex-start;
+      gap: 12px 20px;
+    }
+
+    h3 {
+      font-size: clamp(26px, 3.2vw, 38px);
+      line-height: 1.1;
+    }
+
+    p {
+      max-width: 54ch;
+    }
+
+    .project-card-tags {
+      flex: 1 1 220px;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+}

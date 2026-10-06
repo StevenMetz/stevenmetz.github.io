@@ -1,0 +1,30 @@
+.note-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+
+  .note-row-rfi {
+    flex: 0 0 90px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--red);
+  }
+
+  .note-row-title {
+    flex: 999 1 300px;
+    font-family: var(--font-display);
+    font-stretch: 100%;
+    font-weight: 700;
+    font-size: 23px;
+  }
+
+  .note-row-date {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+  }
+}

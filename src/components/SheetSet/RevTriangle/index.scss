@@ -1,0 +1,27 @@
+.rev-triangle {
+  position: relative;
+  flex: 0 0 44px;
+  width: 40px;
+  height: 36px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+
+  &.current {
+    color: var(--red);
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .rev-triangle-label {
+    position: relative;
+  }
+}

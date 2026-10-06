@@ -1,5 +1,5 @@
 import { describe, expect, it } from '@jest/globals'
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import App from '../src/App'
 import { Sidebar } from '../src/components/Sidebar'
@@ -22,8 +22,31 @@ describe('App routing', () => {
       </MemoryRouter>
     )
 
-    expect(findByTextContent("I'm")).toBeInTheDocument()
-    expect(findByTextContent('Front-End Engineer')).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 1, name: "Hi, I'm Steven." })
+    ).toBeInTheDocument()
+    expect(findByTextContent('Implementation Engineer')).toBeInTheDocument()
+    expect(
+      screen.getByRole('navigation', { name: 'Sheet index' })
+    ).toBeInTheDocument()
+  })
+
+  it('toggles and saves the theme', () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <App />
+      </MemoryRouter>
+    )
+
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Switch to blueprint (dark) view' })
+    )
+
+    expect(document.documentElement.dataset.theme).toBe('dark')
+    expect(localStorage.getItem('theme')).toBe('dark')
+    expect(
+      screen.getByRole('button', { name: 'Switch to paper (light) view' })
+    ).toHaveAttribute('aria-pressed', 'true')
   })
 
   it('renders the about page when navigating to /about', () => {
