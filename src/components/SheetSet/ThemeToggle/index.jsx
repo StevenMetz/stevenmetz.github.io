@@ -45,7 +45,11 @@ export function ThemeToggle() {
         <span className="theme-toggle-switch">
           <span className="theme-toggle-knob" />
         </span>
-        <span>{isDark ? 'BLUEPRINT' : 'PAPER'}</span>
+        {/* Both names are stacked so the cell keeps the wider one's width. */}
+        <span className="theme-toggle-name">
+          <span className={isDark ? 'inactive' : ''}>PAPER</span>
+          <span className={isDark ? '' : 'inactive'}>BLUEPRINT</span>
+        </span>
       </span>
     </button>
   )

@@ -31,6 +31,18 @@
     letter-spacing: 0.04em;
   }
 
+  .theme-toggle-name {
+    display: inline-grid;
+
+    span {
+      grid-area: 1 / 1;
+    }
+
+    .inactive {
+      visibility: hidden;
+    }
+  }
+
   .theme-toggle-switch {
     position: relative;
     display: inline-block;
