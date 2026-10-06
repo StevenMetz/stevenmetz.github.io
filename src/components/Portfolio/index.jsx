@@ -22,7 +22,9 @@ export function Portfolio() {
                 <h4 className="description">{port.description}</h4>
                 <button
                   className="button"
-                  onClick={() => window.open(port.url)}
+                  onClick={() =>
+                    window.open(port.url, '_blank', 'noopener,noreferrer')
+                  }
                   aria-label={`View ${port.title} project`}
                 >
                   View Project
