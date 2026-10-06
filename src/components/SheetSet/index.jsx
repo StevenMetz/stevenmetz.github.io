@@ -8,13 +8,19 @@ import { ProjectCard } from './ProjectCard'
 import { RevisionRow } from './RevisionRow'
 import { NoteRow } from './NoteRow'
 
+// TODO: Field Notes (A-401) is hidden until there are real posts. To bring it
+// back, replace the placeholder rows in src/Data/sheetSet.json ("notes") with
+// real titles, dates and links, then set this to true. The site has no blog
+// system yet, so posts need somewhere to live first.
+const SHOW_FIELD_NOTES = false
+
 const sheets = [
   { code: 'A-101', label: 'PROJECTS', href: '#projects' },
   { code: 'A-201', label: 'EXPERIENCE', href: '#experience' },
   { code: 'A-301', label: 'STORY', href: '#story' },
   { code: 'A-401', label: 'NOTES', href: '#notes' },
   { code: 'A-501', label: 'CONTACT', href: '#contact' },
-]
+].filter(({ href }) => SHOW_FIELD_NOTES || href !== '#notes')
 
 const career = [
   { label: '2016 TO 2023 · FOREMAN', ratio: 7 },
@@ -198,8 +204,8 @@ export function SheetSet() {
                     More of the jobsite carried over than I expected. The plans
                     never quite match what's actually there, whether it's a
                     basement or somebody's Shopify theme. And the person paying
-                    for it wants to hear from someone who gets both the work
-                    and their problem. That's pretty much my whole thing now.
+                    for it wants to hear from someone who gets both the work and
+                    their problem. That's pretty much my whole thing now.
                   </p>
                   <p>
                     On the side I'm working through CS fundamentals, because I
@@ -210,21 +216,23 @@ export function SheetSet() {
             </div>
           </section>
 
-          <section id="notes" className="sheet-section">
-            <div className="sheet-container notes">
-              <SectionHeader
-                number="4"
-                sheet="A-401"
-                title="Field notes"
-                subtitle="Things I figured out, written down so I don't have to figure them out twice."
-              />
-              <div className="note-list">
-                {notes.map((note) => (
-                  <NoteRow key={note.rfi} note={note} />
-                ))}
+          {SHOW_FIELD_NOTES && (
+            <section id="notes" className="sheet-section">
+              <div className="sheet-container notes">
+                <SectionHeader
+                  number="4"
+                  sheet="A-401"
+                  title="Field notes"
+                  subtitle="Things I figured out, written down so I don't have to figure them out twice."
+                />
+                <div className="note-list">
+                  {notes.map((note) => (
+                    <NoteRow key={note.rfi} note={note} />
+                  ))}
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          )}
 
           <section id="contact" className="sheet-section contact">
             <div className="contact-main">
@@ -235,7 +243,10 @@ export function SheetSet() {
                 Shopify weirdness included.
               </p>
               <div className="contact-links">
-                <a href={`mailto:${links.email}`} className="sheet-button solid">
+                <a
+                  href={`mailto:${links.email}`}
+                  className="sheet-button solid"
+                >
                   {links.email}
                 </a>
                 <a href={links.github} className="sheet-button">
