@@ -1,10 +1,9 @@
 {
   "links": {
-    "email": "[YOUR EMAIL]",
+    "email": "stevenm.codes@gmail.com",
     "github": "https://github.com/stevenmetz",
     "gitlab": "https://gitlab.com/StevenMetz",
-    "linkedin": "https://linkedin.com/in/steven-metz",
-    "resume": { "href": "#contact", "label": "[LINK TO PDF]" }
+    "linkedin": "https://linkedin.com/in/steven-metz"
   },
   "generalNotes": [
     "Currently an Implementation Engineer at Rebuy.",
@@ -42,7 +41,7 @@
     {
       "kind": "PERSONAL",
       "title": "Plant-sharing app",
-      "description": "[One or two lines on what it does and who it's for.] Still early.",
+      "description": "A mobile app for keeping journals on your plants, with care notes like how often to water and how much sun each one likes. You can share a journal with other people. Still early.",
       "inProgress": true
     }
   ],

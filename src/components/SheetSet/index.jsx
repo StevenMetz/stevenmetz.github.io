@@ -160,9 +160,6 @@ export function SheetSet() {
                   ))}
                 </ol>
               </div>
-              <a href={links.resume.href} className="resume-link">
-                {`FULL RÉSUMÉ: ${links.resume.label}`}
-              </a>
             </div>
           </section>
 
