@@ -84,10 +84,5 @@
       "description": "I contribute when I have time. Got a merge request into the Google Play integration.",
       "dashed": true
     }
-  ],
-  "notes": [
-    { "rfi": "RFI-001", "title": "[POST TITLE]", "date": "[DATE]", "href": "#notes" },
-    { "rfi": "RFI-002", "title": "[POST TITLE]", "date": "[DATE]", "href": "#notes" },
-    { "rfi": "RFI-003", "title": "[POST TITLE]", "date": "[DATE]", "href": "#notes" }
   ]
 }
